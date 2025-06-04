@@ -7,7 +7,7 @@ const songRoutes = require('./routes/cloudSongs');
 const uploadRoutes = require('./routes/upload');
 
 // Load environment variables
-const result = dotenv.config();
+const result = dotenv.config({ silent: true });
 if (result.error) {
   console.error('Error loading .env file:', result.error);
   process.exit(1);
