@@ -8,9 +8,8 @@ const uploadRoutes = require('./routes/upload');
 
 // Load environment variables
 const result = dotenv.config();
-if (result.error) {
-  console.error('Error loading .env file:', result.error);
-  process.exit(1);
+if (result.error && process.env.NODE_ENV !== 'production') {
+  console.warn('⚠️  .env file not found locally, using Render environment variables instead.');
 }
 
 console.log('Environment variables loaded from:', path.resolve(process.cwd(), '.env'));
@@ -78,7 +77,7 @@ mongoose.connect(process.env.MONGO_URI, {
   console.log('MongoDB connected successfully');
   // Start server only after successful database connection
   app.listen(process.env.PORT, () => {
-    console.log(`Server is running at http://localhost:${process.env.PORT}`);
+    console.log(`✅ Server is running on port ${process.env.PORT}`);
   });
 }).catch(err => {
   console.error('MongoDB connection error:', err.message);
