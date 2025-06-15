@@ -22,5 +22,5 @@ This is the backend API for **Spotifii**, a music streaming web application. Bui
 - Secure and environment-based configurations  
 - Easily extendable for user auth or admin dashboards
 
-🌐 Base URL: `[Your deployed backend URL]`  
+🌐 Base URL: `[https://songsapi-77qx.onrender.com/]`  
 📂 Project Status: Completed
