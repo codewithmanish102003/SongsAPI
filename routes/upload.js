@@ -3,7 +3,8 @@ const router = express.Router();
 const { upload } = require('../utils/cloudinary');
 const Song = require('../models/Song');
 
-router.post('/upload', upload.single('song'), async (req, res) => {
+
+router.post('/', upload.single('song'), async (req, res) => {
   try {
     const { title, artist } = req.body;
     const file = req.file;

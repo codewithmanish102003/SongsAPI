@@ -47,7 +47,7 @@ app.get('/', (req, res) => {
     message: 'Welcome to Songs API',
     endpoints: {
       songs: '/api/songs/cloud-songs',
-      upload: '/api/upload'
+      upload: '/api/upload',
     }
   });
 });
