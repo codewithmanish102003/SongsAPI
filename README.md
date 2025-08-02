@@ -1,7 +1,7 @@
-🎼 Project Title: Spotifii Songs API – Node.js + Express Backend
+🎼 Project Title: musicDev Songs API – Node.js + Express Backend
 
 📝 Description:  
-This is the backend API for **Spotifii**, a music streaming web application. Built with **Node.js** and **Express.js**, this RESTful API handles requests for music tracks stored on **Cloudinary**. It provides clean endpoints to serve song data and streaming URLs for seamless integration with any frontend music player.
+This is the backend API for **musicDev**, a music streaming web application. Built with **Node.js** and **Express.js**, this RESTful API handles requests for music tracks stored on **Cloudinary**. It provides clean endpoints to serve song data and streaming URLs for seamless integration with any frontend music player.
 
 🔧 Tech Stack:  
 - Backend: Node.js | Express.js  
